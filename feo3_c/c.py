@@ -14,4 +14,4 @@ for i in s:
     else:
         ss=i+ss
         bb=True
-print(['Error', 'Right!'][encode(ss) == b'AP-T.:16.HD15K-/Uh;$CM"i$@Tl`;6WZK19ds(\\->>8;88hX.@sq0tGQ'])
+print(['Error', 'Right!'][encode(ss) == b'AP-T.:16.HD15K-/Uh;$CM"i$@Tl`;6WZK19ds(\\->>8;9kSQ0@sq0tGQ'])
