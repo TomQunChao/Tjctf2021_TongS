@@ -1,7 +1,8 @@
 
 from pwn import *
 
-p=process("./eh")
+# p=process("./eh")
+p=remote('localhost',9998)
 context.terminal=['gnome-terminal','-x','sh','-c']
 # p=gdb.debug('./eh')
 # p.recvuntil("\n")

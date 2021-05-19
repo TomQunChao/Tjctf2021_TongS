@@ -15,12 +15,14 @@ void danger(){
     // scanf("%s",name);
     // puts("your name is:");
     // printf(name);
-
+    setvbuf(stdin,NULL,_IONBF,0);
+    setvbuf(stdout,NULL,_IONBF,0);
+    setvbuf(stderr,NULL,_IONBF,0);
     int fd=open("/dev/urandom",O_RDONLY);
     read(fd,&secret,sizeof(secret));
     close(fd);
 
-    // printf("\n%llx\n",secret);
+    // printf("\n%llx %p\n",secret,&secret);
 
     puts("please input your address:");
     scanf("%s",name);

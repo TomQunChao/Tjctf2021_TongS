@@ -28,5 +28,8 @@ int main(){
     FILE *f=fopen("flag.txt","r");
     fscanf(f,"%s",flag);
     fclose(f);
+    setvbuf(stdin,NULL,_IONBF,0);
+    setvbuf(stdout,NULL,_IONBF,0);
+    setvbuf(stderr,NULL,_IONBF,0);
     danger();
 }
