@@ -80,7 +80,7 @@ void check(char *s,size_t len){
     middleOrderTraversal(head,res,&cnt);
     // printf("%s\n%ld\n%s\n",s,len,res);
     if(!strcmp(res,target)){
-        printf("Your input is flag\n");
+        printf("Your input is flag, please submit tjctf{your input}\n");
     }else{
         printf("Oops...flag wrong\n");
     }
